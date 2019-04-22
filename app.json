@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index2/index2",
+    "pages/help/help",
+    "pages/random/random",
+    "pages/self/self",
+    "pages/score/score",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "营养拼盘",
+    "navigationBarTextStyle":"black"
+  }
+}

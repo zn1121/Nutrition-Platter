@@ -1,0 +1,50 @@
+<view class='main'>
+<!-- 图片 -->
+<view class='img_box'>
+<image class='img' src='../../images/random.jpg' mode='scaleToFill'></image>
+</view>
+
+
+
+<!-- 按钮 -->
+<view class='btn_box'>
+<button class='sub' bindtap='toShowModal'>点我随机拼</button>
+</view>
+<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view wx:if="{{showModal}}">
+  <view class="modal-content">
+    <view class='teacher_name_modal'>
+      <text class='role'>{{food[0].name}}</text>
+    </view>
+    <view class='modal_img'>
+      <image class='modalimg' src='http://barenzoe.top:8080/images/dongjie.jpg' style='width:250rpx;height:250rpx'></image>
+    </view>
+    
+    <view class='block_modal'>
+      <view class='block_title_modal'>菜系：</view>
+      <text class='block_title_modal_content'>{{food[0].cuisine}}</text>
+      <view class='block_title_modal'>软硬：</view>
+      <text class='block_title_modal_content'>{{food[0].soft}}</text>
+      <view class='block_title_modal'>颜色：</view>
+      <text class='block_title_modal_content'>{{food[0].color}}</text>
+      <view class='block_title_modal'>口味：</view>
+      <text class='block_title_modal_content'>{{food[0].tast}}</text>
+      <view class='block_title_modal'>营养成分：</view>
+      <text class='block_title_modal_content'>{{food[0].nutrition}}</text>
+      <view class='block_title_modal'>做法：</view>
+      <text class='block_title_modal_content'>{{food[0].do}}</text>
+    </view>
+    
+  </view>
+</view>
+
+<!-- 文字 -->
+<view class='txt_box'>
+<text class='txt'>
+随机不随便
+
+营养都在线
+</text>
+</view>
+
+</view>

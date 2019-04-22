@@ -1,0 +1,180 @@
+
+page{
+  background: url('https://barenzoe.top/images/index_bg.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.search_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100rpx;
+  width: 100%;
+}
+.search_icon{
+  flex: 1;
+  height: 50rpx;
+  width: 50rpx;
+  padding: 0 20rpx 0 20rpx;
+}
+.search{
+  flex: 12;
+}
+.recom{
+  background-color: #fff;
+  height: 300rpx;
+  width: 610rpx;
+  /* margin: 30rpx 50rpx 0 50rpx; */
+  margin-left: 7.5%;
+  margin-top: 15%;
+  border: 7px dotted;
+  border-color: #ffb240;
+  border-radius: 25rpx;
+}
+.box1_1{
+  margin-top: -6%;
+  margin-left: 3%;
+}
+.recom_title{
+  color: green;
+  font-size: 110%;
+}
+.box1_2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu{
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+.mymenu_title{
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+  color:#05004e;
+  font-family: "方正舒体";
+  font-size: 230%;
+  text-shadow: 3px 6px 6px #76b39d;
+  
+}
+.mymenu_img{
+  height: 100rpx;
+  width: 400rpx;
+}
+
+.mymenu_box{ 
+  background-color: #fff;
+  height: 250rpx;
+  width:400rpx;
+  margin-top: 10%;
+  margin-left: 21.5%;
+  border-radius: 25rpx;
+  border: 7px double;
+  border-color: purple;
+}
+.box2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box_ipt{
+  width: 360rpx;
+  height: 230rpx;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  font-size:100%;
+}
+.mymenu{
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+.sub{
+  /* height: 30rpx;
+  width: 100rpx; */
+  background-color: #ff9800;
+  color: #fff;
+  size: default;
+  width: 400rpx;
+  margin-top: 10%;
+}
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-content {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 9500;
+  width: 500rpx;
+  height: 55%;
+  overflow: hidden;
+  padding: 50rpx 50rpx 50rpx;
+  background: #eff;
+  margin: -180rpx 70rpx;
+  border-radius: 20rpx;
+}
+.teacher_name_modal{
+  font-family: "楷体";
+  text-align:center;
+  font-size: 150%;
+}
+.modal_img{
+  border-radius:250rpx;
+  width: 250rpx;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-top:5%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.contact_modal {
+  width: 25%;
+  float: right;
+  margin-right: 5%;
+}
+
+.block_modal {
+  background: #fff;
+  width: 100%;
+  height: 390rpx;
+  margin-top: 40rpx;
+  overflow: scroll;
+}
+
+.block_title_modal {
+  position: relative;
+  font-size: 32rpx;
+  line-height: 1.2;
+  padding: 10rpx;
+  text-indent: 30rpx;
+}
+
+.block_title_modal::after {
+  position: absolute;
+  left: 10rpx;
+  top: 8rpx;
+  content: '';
+  width: 9rpx;
+  height: 46rpx;
+  background: rgb(68, 228, 233);
+}
+
+.block_title_modal_content{
+  font-size: 26rpx;
+  padding: 0 0rpx 0 52rpx;
+  font-family:"幼圆"; 
+}

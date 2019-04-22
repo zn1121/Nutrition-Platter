@@ -1,0 +1,63 @@
+<view class='main'>
+
+<!-- 搜索框 -->
+<!-- <view class='search_box'>
+<image class='search_icon' src='../../icons/search_icon.png'></image>
+<input class='search' type='text' confirm-type='search' placeholder='回锅肉'></input>
+</view> -->
+
+<!-- 推荐框 -->
+<view class='recom'>
+  <!-- 为你推荐 -->
+  <view class='box1_1'>
+  <text class='recom_title'>
+  为你推荐
+  </text>
+  </view>
+  <!-- 菜单 -->
+  <view class='box1_2'>
+  <text class='menu' wx:for="{{arr1}}">{{item}}</text>
+  </view>
+</view>
+
+<!-- 我的菜单 -->
+<view class='mymenu_title'>
+<!-- <image class='mymenu_img' src='https://barenzoe.top/images/mymenu.png'></image> -->
+  <text>我的菜单</text>
+</view>
+
+<!-- 我点的菜 -->
+<view class='mymenu_box'>
+<view class='box2'>
+<!-- <text class='mymenu' wx:for="{{arr2}}">{{item}}</text> -->
+<textarea class='box_ipt' placeholder="请输入3种菜品，每种菜品请用“、”隔开" value='{{textareaVal}}' bindinput='textarea' ></textarea>
+
+</view>
+</view>
+
+<!-- 点评按钮 -->
+
+<button class='sub' bindtap='toShowModal'>帮我评分</button>
+<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+<view wx:if="{{showModal}}">
+  <view class="modal-content">
+    <view class='teacher_name_modal'>
+      <text class='role'>建议评分</text>
+    </view>
+    <view class='modal_img'>
+      <image class='modalimg' src='http://barenzoe.top:8080/images/dongjie.jpg' style='width:250rpx;height:250rpx'></image>
+    </view>
+    
+    <view class='block_modal'>
+      <view class='block_title_modal'>分数：</view>
+      <text class='block_title_modal_content'>{{yycf[0]}}</text>
+      <view class='block_title_modal'>营养成分：</view>
+      <text class='block_title_modal_content'>{{yycf[0]}}</text>
+      <view class='block_title_modal'>建议：</view>
+      <text class='block_title_modal_content'>{{yycf[1]}}</text>
+    </view>
+    
+  </view>
+</view>
+
+</view>
