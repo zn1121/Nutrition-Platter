@@ -1,0 +1,11 @@
+<view class='main'>
+  <view class='help_index_food1'>
+    food_name:{{food_name}}
+    food_name1:{{food_name1}}
+    food1:{{food1[0].name}}
+    food2:{{food2[0].name}}
+  </view>
+  <view class='help_index_food2'>
+  
+  </view>
+</view>

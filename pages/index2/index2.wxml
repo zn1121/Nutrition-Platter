@@ -1,22 +1,17 @@
 <view class="main" style=''>
-
-<view class='self'>
-<navigator url='../self/self' open-type='navigate'>
-<image class='self_img' src='https://zn1121.com/images/zzp_img.jpg' alt="自主拼" mode='scaleToFill'></image>
-</navigator>
-</view>
-
-
-<view class='rand'>
-<navigator url='../random/random' open-type='navigate'>
-<image class='rand_img' mode="scaleToFill" src='https://zn1121.com/images/sjp_img.jpg'></image>
-</navigator>
-</view>
-
-<view class='help'>
-<navigator url='../help/help' open-type='navigate'>
-<image class='help_img' src='https://zn1121.com/images/bnp_img.jpg' mode='scaleToFill'></image>
-</navigator>
-</view>
-
+  <view class='self'>
+    <navigator url='../self/self' open-type='navigate'>
+    <image class='self_img' src='https://zn1121.com/images/zzp_img.jpg' alt="自主拼" mode='scaleToFill'></image>
+    </navigator>
+  </view>
+  <view class='rand'>
+    <navigator url='../random/random' open-type='navigate'>
+    <image class='rand_img' mode="scaleToFill" src='https://zn1121.com/images/sjp_img.jpg'></image>
+    </navigator>
+  </view>
+  <view class='help'>
+    <navigator url='../help/help' open-type='navigate'>
+    <image class='help_img' src='https://zn1121.com/images/bnp_img.jpg' mode='scaleToFill'></image>
+    </navigator>
+  </view>
 </view>

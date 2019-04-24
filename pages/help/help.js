@@ -3,9 +3,8 @@ Page({
   data: {
     showModal: false,
     food: [],
-    food_name:"",
-    searchValue:""
-
+    textareaVal: "",
+    
   },
   toShowModal(e) {
     var that = this;
@@ -13,31 +12,30 @@ Page({
       showModal: true
     });
     wx.request({
-      url: 'https://zn1121.com/suijipin',
+      url: 'https://zn1121.com/bangnipin',
       method: 'GET',
       header: {
         'content-type': 'application/json'
       },
       data: {
-        name: that.food_name
+        food_name: this.data.textareaVal
       },
       success: function (res) {
         console.log(res.data);
         that.setData({ food: res.data });
       }
     })
-    console.log("food", that.data.food);
+    console.log("food", this.data.textareaVal);
+    console.log("id=", this.data.foodId)
   },
   hideModal() {
     this.setData({
       showModal: false
     });
   },
-  // eatFood:function(e){
-  //   this.setData({
-  //     food_name: e.detail.value
-  //   })
-  //   console.log("food_name",this.food_name)
-  // },
-  
+  textarea: function (e) {
+    this.setData({
+      textareaVal: e.detail.value
+    })
+  },
 })
