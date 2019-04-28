@@ -84,8 +84,8 @@ page{
 }
 .box_ipt{
   width: 360rpx;
-  height: 230rpx;
-  padding: 20rpx 20rpx 20rpx 20rpx;
+  height: 100rpx;
+  padding: 0rpx 20rpx 20rpx 20rpx;
   font-size:100%;
 }
 .mymenu{

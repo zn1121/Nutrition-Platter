@@ -1,39 +1,38 @@
 Page({
   data: {
-    food_id1: "",//上一页传来的食物名字，用户选择的荤/素菜的名字
-    food_id2: "",//上一页传来的食物的名字，自主拼用户输入的菜名
-    food1: [],
-    food2: []
+    food_name: "",//上一页传来的食物名字，用户选择的荤/素菜的名字
+    food_name1: "",//上一页传来的食物的名字，自主拼用户输入的菜名
+    food1:[],
+    food2:[]
   },
   onLoad: function (options) {
     var that = this;
     this.setData({
-      food_id1: options.id1,
-      food_id2: options.id2
+      food_name: options.food_name,
+      food_name1: options.food_name1
     })
-
-    wx.request({//请求荤菜
-      url: 'https://zn1121.com/help_hcid',
+    wx.request({//请求第一个菜
+      url: 'https://zn1121.com/zizhupin_index',
       method: 'GET',
       header: {
         'content-type': 'application/json'
       },
       data: {
-        food_hcid: this.data.food_id1,
+        food_name:this.data.food_name,
       },
       dataType: 'json',
       success: function (res) {
         that.setData({ food1: res.data });
       }
     })
-    wx.request({//请求素菜
-      url: 'https://zn1121.com/help_scid',
+    wx.request({//请求第二个菜
+      url: 'https://zn1121.com/zizhupin_index',
       method: 'GET',
       header: {
         'content-type': 'application/json'
       },
       data: {
-        food_scid: this.data.food_id2
+        food_name:this.data.food_name1
       },
       dataType: 'json',
       success: function (res) {
@@ -41,5 +40,4 @@ Page({
       }
     })
   },
-  
 })

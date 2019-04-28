@@ -11,7 +11,7 @@ Page({
   },
   toShowModal(e) {
     var that = this;
-    var random = Math.floor(Math.random() * 4);
+    var random = Math.floor(Math.random() * 499);
     this.setData({
       showModal: true
     });
@@ -26,17 +26,13 @@ Page({
       },
       dataType: 'json',
       success: function (res) {
-        console.log(res.data);
         that.setData({food:res.data});
+        console.log(res.data)
       }
     })
     that.setData({
       suiji:random
     })
-    console.log("random",random);
-    console.log("随机数",that.data.suiji);
-    console.log("sjp_ramdom",that.data.sjp_random)
-    console.log("food",that.data.food);
   },
 
   hideModal() {

@@ -4,29 +4,16 @@ Page({
     showModal: false,
     food: [],
     textareaVal: "",
-    
+    random1:"",
+    random2:""
   },
   toShowModal(e) {
     var that = this;
-    this.setData({
-      showModal: true
-    });
-    wx.request({
-      url: 'https://zn1121.com/bangnipin',
-      method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
-      data: {
-        food_name: this.data.textareaVal
-      },
-      success: function (res) {
-        console.log(res.data);
-        that.setData({ food: res.data });
-      }
+    this.data.random1 = Math.floor(Math.random() * 249);
+    this.data.random2 = Math.floor(Math.random() * 299);
+    wx.navigateTo({
+      url: '../help_index/help_index?id1=' + this.data.random1 + "&id2=" + this.data.random2,
     })
-    console.log("food", this.data.textareaVal);
-    console.log("id=", this.data.foodId)
   },
   hideModal() {
     this.setData({

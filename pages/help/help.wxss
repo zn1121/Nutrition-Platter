@@ -42,7 +42,7 @@ page{
   width: 300rpx;
   background-color: #fbb901;
   color: #fff;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .modal-mask {
   width: 100%;
@@ -120,4 +120,15 @@ page{
   font-size: 26rpx;
   padding: 0 0rpx 0 52rpx;
   font-family:"幼圆"; 
+}
+.txt_v{
+  width: 100%;
+  text-align:center;
+}
+.txt{
+  font-size: 90%;
+  color: #49beb7;
+  font-family: "楷体";
+  text-align:center;
+
 }

@@ -5,9 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    arr1:["荷包蛋","豆角炒肉","小鸡炖蘑菇","蒸熊掌","回锅肉","拔丝鸡蛋","四喜丸子","酸辣粉"],
+    arr1:[],
     showModal: false,
     food: [],
+    foodurl:[],
     textareaVal:'',
   },
   toShowModal(e) {
@@ -29,10 +30,25 @@ Page({
       dataType: 'json',
       success: function (res) {
         that.setData({ food: res.data });
+        console.log(that.data.food);
       }
     })
-    console.log("这是传回来的数据", that.data.food);
-    console.log("index:",that.data.index)
+    wx.request({
+      url: 'https://zn1121.com/bangnipin',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      data: {
+        food_name: this.data.textareaVal,
+
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({ foodurl: res.data });
+        console.log("图片",that.data.food);
+      }
+    })
   },
   hideModal() {
     this.setData({
@@ -45,10 +61,26 @@ Page({
     })
   },
   go:function(e){
-    console.log(e);
-    console.log("这是用户选择的菜品名称：",this.data.food[parseInt(e.currentTarget.dataset.index)].name)
     wx.navigateTo({
-      url: "../help_index/help_index?food_name=" + this.data.food[parseInt(e.currentTarget.dataset.index)].name + "&food_name1=" + this.data.textareaVal 
+      url: "../self_index/self_index?food_name=" + this.data.food[parseInt(e.currentTarget.dataset.index)].name + "&food_name1=" + this.data.textareaVal 
+    })
+  },
+  onLoad:function(){
+    var that = this;
+    wx.request({
+      url: 'https://zn1121.com/zizhupin_tuijian',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      data: {
+        food_name: this.data.textareaVal,
+
+      },
+      dataType: 'json',
+      success: function (res) {
+          that.setData({ arr1: res.data});
+      }
     })
   }
 })

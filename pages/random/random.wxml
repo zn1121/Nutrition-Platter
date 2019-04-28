@@ -17,18 +17,18 @@
       <text class='role'>{{food[0].name}}</text>
     </view>
     <view class='modal_img'>
-      <image class='modalimg' src='http://barenzoe.top:8080/images/dongjie.jpg' style='width:250rpx;height:250rpx'></image>
+      <image class='modalimg' src='{{food[0].url}}' style='width:250rpx;height:250rpx'></image>
     </view>
     
     <view class='block_modal'>
-      <view class='block_title_modal'>菜系：</view>
-      <text class='block_title_modal_content'>{{food[0].cuisine}}</text>
-      <view class='block_title_modal'>软硬：</view>
-      <text class='block_title_modal_content'>{{food[0].soft}}</text>
-      <view class='block_title_modal'>颜色：</view>
-      <text class='block_title_modal_content'>{{food[0].color}}</text>
+      <view class='block_title_modal'>荤素：</view>
+      <text class='block_title_modal_content'>{{food[0].hunsu}}</text>
       <view class='block_title_modal'>口味：</view>
       <text class='block_title_modal_content'>{{food[0].tast}}</text>
+      <view class='block_title_modal'>原料：</view>
+      <text class='block_title_modal_content'>{{food[0].yuanliao}}</text>
+      <view class='block_title_modal'>调料：</view>
+      <text class='block_title_modal_content'>{{food[0].tiaoliao}}</text>
       <view class='block_title_modal'>营养成分：</view>
       <text class='block_title_modal_content'>{{food[0].nutrition}}</text>
       <view class='block_title_modal'>做法：</view>
