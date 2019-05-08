@@ -1,7 +1,7 @@
 
 page{
   background: url('https://barenzoe.top/images/index_bg.jpg') no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
 }
 .main{
   display: flex;
@@ -97,12 +97,12 @@ page{
   background-color: #ff9800;
   color: #fff;
   size: default;
-  width: 400rpx;
+  width: 350rpx;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
 .modal-mask {
   width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -111,6 +111,7 @@ page{
   overflow: hidden;
   z-index: 9000;
   color: #fff;
+  margin-bottom: 20rpx;
 }
 
 .modal-content {
@@ -133,8 +134,8 @@ page{
 }
 .modal_img{
   border-radius:250rpx;
-  width: 250rpx;
-  height: 250rpx;
+  width: 200rpx;
+  height: 200rpx;
   margin: 0 auto;
   margin-top:5%;
   overflow: hidden;
@@ -150,7 +151,7 @@ page{
 .block_modal {
   background: rgb(250, 250, 250);
   width: 100%;
-  height: 390rpx;
+  /* height: 390rpx; */
   margin-top: 40rpx;
   overflow: scroll;
 }

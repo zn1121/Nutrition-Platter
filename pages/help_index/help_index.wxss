@@ -1,6 +1,5 @@
 page{
   background:url('https://zn1121.com/images/index_bg.jpg') no-repeat;
-  background-size: 100% 110%;
 }
 .title{
   margin-top: -20%;
@@ -19,12 +18,17 @@ page{
   width: 600rpx;
   border-radius: 50rpx;
   border: 7rpx dashed orange;
+  
   /* background-color: #4e95ef; */
   /* overflow: scroll; */
 }
 .box_img1{
+  float: left;
   margin: 5% 0 0 10%;
   border-radius: 20rpx;
+}
+.box1-2{
+  margin-top: 5%;
 }
 .img1{
   height: 150rpx;
@@ -32,29 +36,19 @@ page{
   border-radius: 20rpx;
 }
 .name1{
-  position: absolute;
-  left: 45%;
-  top: 20.5%;
   font-family: "黑体";
   font-size: 35rpx;
 }
 .cuisine1{
-  position: absolute;
-  left: 45%;
-  top: 24%;
   font-family: "黑体";
   font-size: 35rpx;
 }
 .hunsu1{
-  position: absolute;
-  left: 45%;
-  top: 27.5%;
   font-family: "黑体";
   font-size: 35rpx;
 }
 .zuofa1{
   overflow: scroll;
-  /* padding-left: 50rpx; */
   margin-left: 55rpx;
   width: 480rpx;
   height: 200rpx;
@@ -72,6 +66,7 @@ page{
 .box_img2{
   margin: 5% 0 0 10%;
   border-radius: 20rpx;
+  float: left
 }
 .img2{
   height: 150rpx;
@@ -79,23 +74,14 @@ page{
   border-radius: 20rpx;
 }
 .name2{
-  position: absolute;
-  left: 45%;
-  top: 54.5%;
   font-family: "黑体";
   font-size: 35rpx;
 }
 .cuisine2{
-  position: absolute;
-  left: 45%;
-  top: 58%;
   font-family: "黑体";
   font-size: 35rpx;
 }
 .hunsu2{
-  position: absolute;
-  left: 45%;
-  top: 61.5%;
   font-family: "黑体";
   font-size: 35rpx;
 }

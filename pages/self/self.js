@@ -5,11 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    arr1:[],
+    arr1: [],
     showModal: false,
     food: [],
-    foodurl:[],
-    textareaVal:'',
+    foodurl: [],
+    textareaVal: '',
   },
   toShowModal(e) {
     var that = this;
@@ -24,12 +24,13 @@ Page({
         'content-type': 'application/json'
       },
       data: {
-        food_name:this.data.textareaVal,
-
+        food_name: this.data.textareaVal,
       },
       dataType: 'json',
-      success: function (res) {
-        that.setData({ food: res.data });
+      success: function(res) {
+        that.setData({
+          food: res.data
+        });
         console.log(that.data.food);
       }
     })
@@ -44,28 +45,32 @@ Page({
 
       },
       dataType: 'json',
-      success: function (res) {
-        that.setData({ foodurl: res.data });
-        console.log("图片",that.data.food);
+      success: function(res) {
+        that.setData({
+          foodurl: res.data
+        });
+        console.log("图片", that.data.food);
       }
     })
+
+
   },
   hideModal() {
     this.setData({
       showModal: false
     });
   },
-  textarea:function(e){
+  textarea: function(e) {
     this.setData({
       textareaVal: e.detail.value
     })
   },
-  go:function(e){
+  go: function(e) {
     wx.navigateTo({
-      url: "../self_index/self_index?food_name=" + this.data.food[parseInt(e.currentTarget.dataset.index)].name + "&food_name1=" + this.data.textareaVal 
+      url: "../self_index/self_index?food_name=" + this.data.food[parseInt(e.currentTarget.dataset.index)].name + "&food_name1=" + this.data.textareaVal
     })
   },
-  onLoad:function(){
+  onLoad: function() {
     var that = this;
     wx.request({
       url: 'https://zn1121.com/zizhupin_tuijian',
@@ -78,8 +83,10 @@ Page({
 
       },
       dataType: 'json',
-      success: function (res) {
-          that.setData({ arr1: res.data});
+      success: function(res) {
+        that.setData({
+          arr1: res.data
+        });
       }
     })
   }

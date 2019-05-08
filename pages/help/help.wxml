@@ -1,54 +1,13 @@
 <view class='main'>
-
-<!-- 图片 -->
-<view class='img_box'>
-<image class='img' src='https://barenzoe.top/images/help_img.jpg'></image>
-
-</view>
-
-<!-- 搜索框 -->
-<!-- <view class='search_box'>
-<image class='search_icon' src='../../icons/search_icon.png'></image>
-<input class='search_inp' type='search' placeholder='你想吃点什么？' value='{{textareaVal}}' bindinput='textarea'>
-</input>
-</view> -->
-
-<view class='txt_v'>
-  <text class='txt'>
-  点击下方生成菜单按钮
-  小拼告诉你今天吃什么
-  </text>
-</view>
-
+  <view class='img_box'>
+  <image class='img' src='https://barenzoe.top/images/help_img.jpg'></image>
+  </view>
+  <view class='txt_v'>
+    <text class='txt'>
+    点击下方生成菜单按钮
+    小拼告诉你今天吃什么
+    </text>
+  </view>
 <!-- 按钮 -->
 <button class='btn' bindtap='toShowModal'>生成菜单</button>
-<!-- <view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
-<view wx:if="{{showModal}}">
-  <view class="modal-content">
-    <view class='teacher_name_modal'>
-      <text class='role'>{{food[0].name}}</text>
-    </view>
-    <view class='modal_img'>
-      <image class='modalimg' src='http://barenzoe.top:8080/images/dongjie.jpg' style='width:250rpx;height:250rpx'></image>
-    </view>
-    
-    <view class='block_modal'>
-      <view class='block_title_modal'>菜系：</view>
-      <text class='block_title_modal_content'>{{food[0].cuisine}}</text>
-      <view class='block_title_modal'>软硬：</view>
-      <text class='block_title_modal_content'>{{food[0].soft}}</text>
-      <view class='block_title_modal'>颜色：</view>
-      <text class='block_title_modal_content'>{{food[0].color}}</text>
-      <view class='block_title_modal'>口味：</view>
-      <text class='block_title_modal_content'>{{food[0].tast}}</text>
-      <view class='block_title_modal'>营养成分：</view>
-      <text class='block_title_modal_content'>{{food[0].nutrition}}</text>
-      <view class='block_title_modal'>做法：</view>
-      <text class='block_title_modal_content'>{{food[0].do}}</text>
-    </view>
-    
-  </view>
-</view> -->
-
-
 </view>

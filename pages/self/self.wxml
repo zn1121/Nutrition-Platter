@@ -44,7 +44,6 @@
       <view wx:for="{{food}}" class='block_modal_card' bindtap='go' data-index="{{index}}">
         {{item.name}}
       </view>
-      
     </view>
     
   </view>

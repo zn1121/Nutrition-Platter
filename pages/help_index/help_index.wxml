@@ -9,8 +9,15 @@
 <view class='box1'>
   <view class='box_img1'>
     <image class='img1' src='{{food1[0].url}}' ></image>
+    
+  </view>
+  <view class='box1-2'>
     <text class='name1'>名称：{{food1[0].name}}</text>
+  </view>
+  <view class='box1-1'>
     <text class='cuisine1'>味道：{{food1[0].tast}}</text>
+  </view>
+  <view class='box1-1'>
     <text class='hunsu1'>荤素：{{food1[0].hunsu}}</text>
   </view>
   <view class='zuofa1'>
@@ -37,8 +44,14 @@
 <view class='box2'>
   <view class='box_img2'>
     <image class='img2' src='{{food2[0].url}}' alt="图二"></image>
-    <text class='name2'>名称：{{food2[0].name}}</text>
+  </view>
+  <view class='box1-2'>
+    <text class='name1'>名称：{{food2[0].name}}</text>
+  </view>
+  <view class='box1-1'>
     <text class='cuisine2'>味道：{{food2[0].tast}}</text>
+  </view>
+  <view class='box1-1'>
     <text class='hunsu2'>荤素：{{food2[0].hunsu}}</text>
   </view>
   <view class='zuofa2'>
