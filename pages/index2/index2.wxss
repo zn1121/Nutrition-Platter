@@ -7,43 +7,33 @@ page{
   flex-direction: column;
 }
 .self{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 18%;
+  margin-top: 18%;
+  width: 100%;
+  
+  text-align: center;
 }
 .self_img{
-  flex: 1;
   height: 300rpx;
   width: 500rpx;
   border-radius: 20rpx;
 }
 .rand{
-  display: flex;
-  justify-content: center;
-  padding-top:15%;
+  margin-top:15%;
+  width: 100%;
+  text-align: center;
 }
 .rand_img{
-  flex: 1;
-  height: 300rpx;
-  width: 500rpx;
   border-radius: 20rpx;
+  height: 300rpx;
+  width: 550rpx;
 }
-/* .rand_txt{
-  margin-left: -305rpx;
-} */
 .help{
-  display: flex;
-  justify-content: center;
-  padding-top:15%;
+  margin-top:15%;
+  width: 100%;
+  text-align: center;
 }
 .help_img{
-  flex: 1;
   height: 300rpx;
-  width: 500rpx;
+  width: 550rpx;
   border-radius: 20rpx;
-  margin-bottom: 10%;
 }
-/* .help_txt{
-  margin-left: -305rpx;
-} */
