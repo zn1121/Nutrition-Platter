@@ -15,7 +15,7 @@
     <text class='name1'>名称：{{food1[0].name}}</text>
   </view>
   <view class='box1-1'>
-    <text class='cuisine1'>味道：{{food1[0].tast}}</text>
+    <text class='cuisine1'>味道：{{food1[0].taste}}</text>
   </view>
   <view class='box1-1'>
     <text class='hunsu1'>荤素：{{food1[0].hunsu}}</text>
@@ -33,10 +33,10 @@
     <text class='txt1'>
       {{food1[0].do}}
     </text>
-    <text class='zftxt'>营养价值：</text>
+    <!-- <text class='zftxt'>营养价值：</text>
     <text class='txt1'>
       {{food1[0].nutrition}}
-    </text>
+    </text> -->
   </view>
 </view>
 
@@ -49,7 +49,7 @@
     <text class='name1'>名称：{{food2[0].name}}</text>
   </view>
   <view class='box1-1'>
-    <text class='cuisine2'>味道：{{food2[0].tast}}</text>
+    <text class='cuisine2'>味道：{{food2[0].taste}}</text>
   </view>
   <view class='box1-1'>
     <text class='hunsu2'>荤素：{{food2[0].hunsu}}</text>
@@ -67,10 +67,10 @@
     <text class='txt2'>
       {{food2[0].do}}
     </text>
-    <text class='zftxt'>营养价值：</text>
+    <!-- <text class='zftxt'>营养价值：</text>
     <text class='txt2'>
       {{food2[0].nutrition}}
-    </text>
+    </text> -->
   </view>
 </view>
 

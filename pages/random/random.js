@@ -11,7 +11,7 @@ Page({
   },
   toShowModal(e) {
     var that = this;
-    var random = Math.floor(Math.random() * 499);
+    var random = Math.floor(Math.random() * 327);
     this.setData({
       showModal: true
     });

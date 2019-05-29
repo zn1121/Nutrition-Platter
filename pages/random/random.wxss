@@ -109,3 +109,11 @@ margin-left: 150rpx;
   padding: 0 0rpx 0 52rpx;
   font-family:"幼圆"; 
 }
+.block_title_modal_contentdo{
+  display:block;
+  font-size: 26rpx;
+  line-height: 52rpx;
+  padding-left:52rpx; 
+  font-family:"幼圆"; 
+  /* text-align:left ; */
+}

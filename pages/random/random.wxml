@@ -24,15 +24,13 @@
       <view class='block_title_modal'>荤素：</view>
       <text class='block_title_modal_content'>{{food[0].hunsu}}</text>
       <view class='block_title_modal'>口味：</view>
-      <text class='block_title_modal_content'>{{food[0].tast}}</text>
+      <text class='block_title_modal_content'>{{food[0].taste}}</text>
       <view class='block_title_modal'>原料：</view>
       <text class='block_title_modal_content'>{{food[0].yuanliao}}</text>
       <view class='block_title_modal'>调料：</view>
       <text class='block_title_modal_content'>{{food[0].tiaoliao}}</text>
-      <view class='block_title_modal'>营养成分：</view>
-      <text class='block_title_modal_content'>{{food[0].nutrition}}</text>
       <view class='block_title_modal'>做法：</view>
-      <text class='block_title_modal_content'>{{food[0].do}}</text>
+      <text class='block_title_modal_contentdo'>{{food[0].do}}</text>
     </view>
     
   </view>
