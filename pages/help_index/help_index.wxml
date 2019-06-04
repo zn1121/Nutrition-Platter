@@ -33,6 +33,7 @@
     <text class='txt1'>
       {{food1[0].do}}
     </text>
+
     <!-- <text class='zftxt'>营养价值：</text>
     <text class='txt1'>
       {{food1[0].nutrition}}

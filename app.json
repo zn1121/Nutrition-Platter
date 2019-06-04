@@ -1,13 +1,15 @@
 {
   "pages": [
     
+    "pages/index/index",
     "pages/index2/index2",
     "pages/help/help",
     "pages/random/random",
     "pages/self/self",
     "pages/logs/logs",
     "pages/self_index/self_index",
-    "pages/help_index/help_index"
+    "pages/help_index/help_index",
+    "pages/baike/baike"
   ],
   "window": {
     "backgroundTextStyle": "light",

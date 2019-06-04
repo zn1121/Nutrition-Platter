@@ -1,28 +1,33 @@
-page{
+page {
   background: url('https://barenzoe.top/images/index_bg.jpg') no-repeat;
 }
-.main{
+
+.main {
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
 }
-.img_box{
+
+.img_box {
   height: 550rpx;
   width: 450rpx;
-  padding-top: 20%;
+  padding-top: 8%;
   padding-left: 20%;
 }
-.img{
+
+.img {
   height: 550rpx;
   width: 450rpx;
   border-radius: 10rpx;
 }
-.search_icon{
+
+.search_icon {
   height: 50rpx;
   width: 50rpx;
   padding-left: 10rpx;
 }
-.search_box{
+
+.search_box {
   background-color: #fff;
   margin-top: 10%;
   width: 500rpx;
@@ -33,16 +38,18 @@ page{
   height: 70rpx;
 }
 
-.search_inp{
+.search_inp {
   width: 400rpx;
   padding-left: 20rpx;
 }
-.btn{
+
+.btn {
   width: 300rpx;
   background-color: #fbb901;
   color: #fff;
-  margin-top: 10%;
+  margin-top: 14%;
 }
+
 .modal-mask {
   width: 100%;
   height: 100%;
@@ -69,21 +76,24 @@ page{
   margin: -180rpx 70rpx;
   border-radius: 20rpx;
 }
-.teacher_name_modal{
+
+.teacher_name_modal {
   font-family: "楷体";
-  text-align:center;
+  text-align: center;
   font-size: 150%;
 }
-.modal_img{
-  border-radius:250rpx;
+
+.modal_img {
+  border-radius: 250rpx;
   width: 250rpx;
   height: 250rpx;
   margin: 0 auto;
-  margin-top:5%;
+  margin-top: 5%;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
+
 .contact_modal {
   width: 25%;
   float: right;
@@ -115,12 +125,14 @@ page{
   height: 46rpx;
   background: rgb(68, 228, 233);
 }
-.block_title_modal_content{
+
+.block_title_modal_content {
   font-size: 26rpx;
   padding: 0 0rpx 0 52rpx;
-  font-family:"幼圆"; 
+  font-family: "幼圆";
 }
-.txt_v{
+
+/* .txt_v{
   width: 100%;
   text-align:center;
 }
@@ -130,4 +142,40 @@ page{
   font-family: "楷体";
   text-align:center;
 
+} */
+
+.taste-radio-txt {
+  transform: scale(0.7);
+}
+.title_text {
+  float: left;
+  width: 15%;
+  margin-left: 10%;
+  margin-top: 23%;
+  position: absolute;
+}
+
+.taste_txt {
+  font-size: 32rpx;
+}
+
+.radio-group {
+  float: left;
+}
+
+.radio {
+  font-size: 32rpx;
+}
+
+.taste {
+  float: left;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 23%;
+}
+
+.caixi {
+  float: left;
+  width: 65%;
+  margin-left: 20%;
 }
