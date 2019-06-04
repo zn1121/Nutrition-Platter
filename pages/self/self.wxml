@@ -8,8 +8,8 @@
   </text>
   </view>
   <!-- 菜单 -->
-  <view class='box1_2'>
-  <text class='menu' wx:for="{{arr1}}">{{item.name}}</text>
+  <view class='box1_2' wx:for="{{arr1}}" wx:key="{{index}}">
+    <text class='menu' bindtap='showModal{{index}}'>{{item.name}}</text>
   </view>
 </view>
 

@@ -1,2 +1,33 @@
-<!--pages/baike/baike.wxml-->
-<text>pages/baike/baike.wxml</text>
+<view>
+
+<!-- 搜索框 -->
+<view class='search_box'>
+<image src='https://zn1121.com/images/search.png' class='search_icon' ></image>
+<input type='text' class='search_inp' placeholder='菜品、地域' bindconfirm='goSearch'/>
+</view>
+
+<!-- 为你推荐 -->
+
+<text class='title1'>为你推荐</text>
+<view class='tuijian'>
+<view class='contents' wx:for="{{arr_name}}" wx:key="{{index}}">
+  <text bindtap='godetail{{index}}'>{{item.name}}</text>
+</view>
+</view>
+
+<view class='hr'></view>
+
+<!-- 趣味百科 -->
+<text class='title2'>趣味百科</text>
+
+<!-- 推送消息 -->
+<view class='news_box'>
+<view class='news_list' wx:for="{{arr_tieshi}}" wx:key="{{index}}">
+<text>{{index+1}}、{{item.content}}</text>
+</view>
+</view>
+
+
+
+
+</view>

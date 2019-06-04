@@ -1,66 +1,74 @@
-// pages/baike/baike.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    arr_name: [],
+    food0: '',
+    arr_tieshi: [],
+    food_search:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  godetail0(e) {
+    var that = this;
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + this.data.arr_name[0].name
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  godetail1(e) {
+    var that = this;
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + this.data.arr_name[1].name
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  godetail2(e) {
+    var that = this;
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + this.data.arr_name[2].name
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  godetail3(e) {
+    var that = this;
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + this.data.arr_name[3].name
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  godetail4(e) {
+    var that = this;
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + this.data.arr_name[4].name
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  goSearch(e){
+    wx.navigateTo({
+      url: '../baike_next/baike_next?food_search=' + e.detail.value
+    })
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onLoad:function(options){
+    var that = this;
+    wx.request({
+      url: 'https://zn1121.com/wiki_name',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({ arr_name: res.data });
+      }
+    })
+    wx.request({
+      url: 'https://zn1121.com/wiki_tieshi',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({ arr_tieshi: res.data });
+      }
+    })
   }
+
 })

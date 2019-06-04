@@ -52,8 +52,6 @@ Page({
         console.log("图片", that.data.food);
       }
     })
-
-
   },
   hideModal() {
     this.setData({
@@ -77,10 +75,6 @@ Page({
       method: 'GET',
       header: {
         'content-type': 'application/json'
-      },
-      data: {
-        food_name: this.data.textareaVal,
-
       },
       dataType: 'json',
       success: function(res) {

@@ -48,9 +48,11 @@ page{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  float: left;
 }
 .menu{
   padding: 10rpx 20rpx 10rpx 20rpx;
+  
 }
 .mymenu_title{
   display: flex;
