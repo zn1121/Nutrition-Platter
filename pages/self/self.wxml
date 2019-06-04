@@ -1,52 +1,52 @@
 <view class='main'>
-<!-- 推荐框 -->
-<view class='recom'>
-  <!-- 为你推荐 -->
-  <view class='box1_1'>
-  <text class='recom_title'>
-  为你推荐
-  </text>
-  </view>
-  <!-- 菜单 -->
-  <view class='box1_2' wx:for="{{arr1}}" wx:key="{{index}}">
-    <text class='menu' bindtap='showModal{{index}}'>{{item.name}}</text>
-  </view>
-</view>
-
-<!-- 我的菜单 -->
-<view class='mymenu_title'>
-  <text>我的菜单</text>
-</view>
-
-<!-- 我点的菜 -->
-<view class='mymenu_box'>
-<view class='box2'>
-<!-- <text class='mymenu' wx:for="{{arr2}}">{{item}}</text> -->
-<input type='text' class='box_ipt' placeholder="请输入1种菜品" value='{{textareaVal}}' bindinput='textarea' ></input>
-
-</view>
-</view>
-
-<!-- 点评按钮 -->
-
-<button class='sub' bindtap='toShowModal'>帮我拼</button>
-<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
-<view wx:if="{{showModal}}">
-  <view class="modal-content">
-    <view class='teacher_name_modal'>
-      <text class='role'>建议配菜</text>
+  <!-- 推荐框 -->
+  <view class='recom'>
+    <!-- 为你推荐 -->
+    <view class='box1_1'>
+      <text class='recom_title'>
+    为你推荐
+    </text>
     </view>
-    <view class='modal_img'>
-      <image class='modalimg' src='{{foodurl[0].url}}' style='width:250rpx;height:250rpx'></image>
+    <!-- 菜单 -->
+    <view class='box1_2' wx:for="{{arr1}}" wx:key="{{index}}">
+      <text class='menu' bindtap='showModal{{index}}'>{{item.name}}</text>
     </view>
-    
-    <view class='block_modal' >
-      <view wx:for="{{food}}" class='block_modal_card' bindtap='go' data-index="{{index}}">
-        {{item.name}}
+  </view>
+
+  <!-- 我的菜单 -->
+  <view class='mymenu_title'>
+    <text>我的菜单</text>
+  </view>
+
+  <!-- 我点的菜 -->
+  <view class='mymenu_box'>
+    <view class='box2'>
+      <!-- <text class='mymenu' wx:for="{{arr2}}">{{item}}</text> -->
+      <input type='text' class='box_ipt' placeholder="请输入1种菜品" value='{{textareaVal}}' bindinput='textarea'></input>
+
+    </view>
+  </view>
+
+  <!-- 点评按钮 -->
+
+  <button class='sub' bindtap='toShowModal'>帮我拼</button>
+  <view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
+  <view wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class='teacher_name_modal'>
+        <text class='role'>建议配菜</text>
       </view>
+      <view class='modal_img'>
+        <image class='modalimg' src='{{foodurl[0].url}}' style='width:250rpx;height:250rpx'></image>
+      </view>
+
+      <view class='block_modal'>
+        <view wx:for="{{food}}" class='block_modal_card' bindtap='go' data-index="{{index}}">
+          {{item.name}}
+        </view>
+      </view>
+
     </view>
-    
   </view>
-</view>
 
 </view>
