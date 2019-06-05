@@ -11,6 +11,32 @@ Page({
     foodurl: [],
     textareaVal: '',
   },
+  updateit(e) {
+    var that = this;
+    wx.request({
+      url: 'https://zn1121.com/zizhupin_tuijian',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      data: {
+        food_name: this.data.textareaVal,
+
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({
+          arr1: res.data
+        });
+
+      }
+    })
+  },
+  tuichu(e) {
+    this.setData({
+      showModal: false
+    });
+  },
   toShowModal(e) { //根据用户输入的菜品展示模态窗口
     var that = this;
     this.data.arr2 = this.data.textareaVal.split("、");

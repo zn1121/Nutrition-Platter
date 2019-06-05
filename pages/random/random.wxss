@@ -117,3 +117,8 @@ margin-left: 150rpx;
   font-family:"幼圆"; 
   /* text-align:left ; */
 }
+.quit{
+  position: absolute;
+  top: 1%;
+  left: 90%;
+}

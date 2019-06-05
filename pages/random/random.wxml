@@ -14,6 +14,7 @@
 <view wx:if="{{showModal}}">
   <view class="modal-content">
     <view class='teacher_name_modal'>
+    <text class='quit' bindtap='tuichu'>x</text>
       <text class='role'>{{food[0].name}}</text>
     </view>
     <view class='modal_img'>

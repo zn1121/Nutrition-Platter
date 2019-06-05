@@ -10,6 +10,20 @@ Page({
     arr_tieshi: [],
     food_search:''
   },
+  updateit(e) {
+    var that = this;
+    wx.request({
+      url: 'https://zn1121.com/wiki_name',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({ arr_name: res.data });
+      }
+    })
+  },
   godetail0(e) {
     var that = this;
     wx.navigateTo({

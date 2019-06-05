@@ -9,6 +9,11 @@ Page({
     food:[],
     suiji:1
   },
+  tuichu(e) {
+    this.setData({
+      showModal: false
+    });
+  },
   toShowModal(e) {
     var that = this;
     var random = Math.floor(Math.random() * 327);

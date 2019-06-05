@@ -3,7 +3,7 @@ page{
 }
 .title{
   margin-top: -20%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   display: flex;
   justify-content: center;
   color:#05004e;
@@ -13,8 +13,8 @@ page{
 }
 
 .box1{
-  margin-top:10%;
-  height: 400rpx;
+  margin-top:5%;
+  height: 530rpx;
   width: 600rpx;
   border-radius: 50rpx;
   border: 7rpx dashed orange;
@@ -51,12 +51,12 @@ page{
   overflow: scroll;
   margin-left: 55rpx;
   width: 480rpx;
-  height: 200rpx;
+  height: 330rpx;
   
 }
 .box2{
   margin-top:10%;
-  height: 400rpx;
+  height: 530rpx;
   width: 600rpx;
   border-radius: 50rpx;
   border: 7rpx dashed orange;
@@ -90,7 +90,7 @@ page{
   /* padding-left: 50rpx; */
   margin-left: 55rpx;
   width: 480rpx;
-  height: 200rpx;
+  height: 330rpx;
   
 }
 .zftxt{

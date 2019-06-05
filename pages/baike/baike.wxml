@@ -17,6 +17,8 @@
 
 <view class='hr'></view>
 
+<text class='huan' bindtap='updateit'>换一批</text>
+
 <!-- 趣味百科 -->
 <text class='title2'>趣味百科</text>
 

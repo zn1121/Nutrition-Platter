@@ -13,6 +13,8 @@
     </view>
   </view>
 
+  <text class='huan' bindtap='updateit'>换一批</text>
+
   <!-- 我的菜单 -->
   <view class='mymenu_title'>
     <text>我的菜单</text>
@@ -34,6 +36,7 @@
   <view wx:if="{{showModal}}">
     <view class="modal-content">
       <view class='teacher_name_modal'>
+        <text class='quit' bindtap='tuichu'>x</text>
         <text class='role'>建议配菜</text>
       </view>
       <view class='modal_img'>
