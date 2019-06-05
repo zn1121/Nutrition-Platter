@@ -51,8 +51,8 @@ page{
   float: left;
 }
 .menu{
-  padding: 10rpx 20rpx 10rpx 20rpx;
-  
+  padding: 15rpx 20rpx 10rpx 20rpx;
+  font-size: 32rpx;
 }
 .mymenu_title{
   display: flex;

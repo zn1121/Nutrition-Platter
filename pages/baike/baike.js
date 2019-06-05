@@ -10,7 +10,7 @@ Page({
     arr_tieshi: [],
     food_search:''
   },
-  updateit(e) {
+  updateit(e) {//推荐换一批
     var that = this;
     wx.request({
       url: 'https://zn1121.com/wiki_name',
@@ -21,6 +21,20 @@ Page({
       dataType: 'json',
       success: function (res) {
         that.setData({ arr_name: res.data });
+      }
+    })
+  },
+  updatetieshi(e){//小贴士换一批
+    var that = this;
+    wx.request({
+      url: 'https://zn1121.com/wiki_tieshi',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      dataType: 'json',
+      success: function (res) {
+        that.setData({ arr_tieshi: res.data });
       }
     })
   },
