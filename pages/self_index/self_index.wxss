@@ -21,7 +21,7 @@ page{
   width: 50%;
   float: left;
   text-align: center;
-  line-height: 370rpx;
+  margin-top: 145rpx;
 }
 .name_txt{
   font-size: 54rpx;
