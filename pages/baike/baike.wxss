@@ -1,41 +1,44 @@
 page{
-  background:url('https://zn1121.com/images/index_bg.jpg') no-repeat;
+  background:url('https://barenzoe.top/images/baikebg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .search_box{
-  /* background-color:#feab5b; */
   height: 80rpx;
-  /* margin-top:0.5rpx; */
+  width: 60%;
   border-bottom: 1px solid gray;
   display: flex;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 }
 .search_inp{
   margin-top: 10rpx;
   margin-left: 20rpx;
-  flex: 9
 }
 .search_icon{
   margin-top: 10rpx;
   margin-right: 20rpx;
   height: 50rpx;
   width: 50rpx;
+  opacity: 0.5;
 }
 .title1{
-  color: #529e35;
-  font-size: 110%;
-  font-weight: 900;
-  font-family: '黑体';
-  position: relative;
-  left: 50rpx;
-  top: 30rpx;
+  font-size: 120%;
+  font-family: '方正兰亭超细黑简体';
+  margin-top: 10%;
 }
+
 .tuijian{
-  margin-top: 50rpx;
-  margin-left: 100rpx;
-  margin-right: 100rpx;
+  width: 80%;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .contents{
   padding-right: 50rpx;
@@ -49,7 +52,7 @@ page{
   height: 1rpx;
   background-color: gray;
 }
-.title2{
+/* .title2{
   color: #35b2ff;
   font-size: 110%;
   font-weight: 900;
@@ -57,10 +60,17 @@ page{
   position: absolute;
   left: 7%;
   top: 32%;
+} */
+.zhidao{
+  /* margin-left: -40%; */
+  margin-top: 5%;
+  font-family: '方正兰亭超细黑简体';
+  font-size: 120%;
+
 }
 .news_box{
-  margin-top: 150rpx;
-  margin-left: 70rpx;
+  margin-top: 10%;
+  /* margin-left: 70rpx; */
 }
 .news_list{
   padding-bottom: 50rpx;

@@ -1,5 +1,7 @@
 {
   "pages": [
+    
+    "pages/index3/index3",
     "pages/index/index",
     "pages/index2/index2",
     "pages/help/help",
@@ -9,7 +11,8 @@
     "pages/self_index/self_index",
     "pages/help_index/help_index",
     "pages/baike/baike",
-    "pages/baike_next/baike_next"
+    "pages/baike_next/baike_next",
+    "pages/random_index/random"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,124 +1,19 @@
 page{
-  background: url('https://barenzoe.top/images/index_bg.jpg') no-repeat;
-}
-.img_box{
-  height: 550rpx;
-  width: 450rpx;
-  margin-top: 20%;
-  margin-left: 20%; 
-}
-.img{
-  height: 550rpx;
-  width: 450rpx;
-}
-.btn_box{
-margin: 1rpx;
-width: 450rpx;
-margin-left: 150rpx;
-}
-.sub{
-  background-color: #fbb901;
-  color: #fff;
-  width: 450rpx;
-}
-.txt_box{
-  height: 400rpx;
-  width: 450rpx;
-  margin-top: 15%;
-  margin-left: 32%;
+  /* background:rgb(240, 240, 240) */
+  background: url('https://zn1121.com/images/random_background.png') repeat-x;
+  background-size:100% 110%;
+  
 }
 .txt{
-  font-weight: 900;
-  font-size: 150%;
+  font-size: 28rpx;
+  float: left;
+  font-family: "方正兰亭超细黑简体";
+  margin:200rpx 0  0 100rpx
 }
-.modal-mask {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #000;
-  opacity: 0.5;
-  overflow: hidden;
-  z-index: 9000;
-  color: #fff;
-}
-
-.modal-content {
-  position: fixed;
-  top: 30%;
-  left: 0;
-  z-index: 9500;
-  width: 500rpx;
-  height: 55%;
-  overflow: hidden;
-  padding: 50rpx 50rpx 50rpx;
-  background: #eff;
-  margin: -180rpx 70rpx;
-  border-radius: 20rpx;
-}
-.teacher_name_modal{
-  font-family: "楷体";
-  text-align:center;
-  font-size: 150%;
-}
-.modal_img{
-  border-radius:250rpx;
-  width: 250rpx;
-  height: 250rpx;
-  margin: 0 auto;
-  margin-top:5%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-.contact_modal {
-  width: 25%;
-  float: right;
-  margin-right: 5%;
-}
-
-.block_modal {
-  background: #fff;
-  width: 100%;
-  height: 390rpx;
-  margin-top: 40rpx;
-  overflow: scroll;
-}
-
-.block_title_modal {
-  position: relative;
-  font-size: 32rpx;
-  line-height: 1.2;
-  padding: 10rpx;
-  text-indent: 30rpx;
-}
-
-.block_title_modal::after {
-  position: absolute;
-  left: 10rpx;
-  top: 8rpx;
-  content: '';
-  width: 9rpx;
-  height: 46rpx;
-  background: rgb(68, 228, 233);
-}
-
-.block_title_modal_content{
-  font-size: 26rpx;
-  padding: 0 0rpx 0 52rpx;
-  font-family:"幼圆"; 
-}
-.block_title_modal_contentdo{
-  display:block;
-  font-size: 26rpx;
-  line-height: 52rpx;
-  padding-left:52rpx; 
-  font-family:"幼圆"; 
-  /* text-align:left ; */
-}
-.quit{
-  position: absolute;
-  top: 1%;
-  left: 90%;
+.btn{
+  float: left;
+  margin: 600rpx 0rpx 0 450rpx;
+  font-size: 28rpx; 
+  font-family: "方正兰亭超细黑简体";
+  background:rgb(240, 240, 240);
 }

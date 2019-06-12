@@ -8,7 +8,7 @@ Page({
     arr_name: [],
     food0: '',
     arr_tieshi: [],
-    food_search:''
+    food_search: ''
   },
   updateit(e) {//推荐换一批
     var that = this;
@@ -24,7 +24,7 @@ Page({
       }
     })
   },
-  updatetieshi(e){//小贴士换一批
+  updatetieshi(e) {//小贴士换一批
     var that = this;
     wx.request({
       url: 'https://zn1121.com/wiki_tieshi',
@@ -68,12 +68,12 @@ Page({
       url: '../baike_next/baike_next?food_search=' + this.data.arr_name[4].name
     })
   },
-  goSearch(e){
+  goSearch(e) {
     wx.navigateTo({
       url: '../baike_next/baike_next?food_search=' + e.detail.value
     })
   },
-  onLoad:function(options){
+  onLoad: function (options) {
     var that = this;
     wx.request({
       url: 'https://zn1121.com/wiki_name',

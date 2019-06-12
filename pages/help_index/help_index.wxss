@@ -1,5 +1,6 @@
 page{
-  background:url('https://zn1121.com/images/index_bg.jpg') no-repeat;
+  /* background:url('https://zn1121.com/images/index_bg.jpg') no-repeat; */
+  background-color: rgb(242, 242, 242);
 }
 .title{
   margin-top: -20%;
@@ -7,8 +8,8 @@ page{
   display: flex;
   justify-content: center;
   color:#05004e;
-  font-family: "方正舒体";
-  font-size: 230%;
+  font-family: "方正兰亭超细黑简体";
+  font-size: 46rpx;
   text-shadow: 3px 6px 6px #76b39d;
 }
 
@@ -16,11 +17,9 @@ page{
   margin-top:10%;
   height: 530rpx;
   width: 600rpx;
-  border-radius: 50rpx;
-  border: 7rpx dashed orange;
-  
-  /* background-color: #4e95ef; */
-  /* overflow: scroll; */
+  border-radius: 10rpx;
+  border: 7rpx dashed #999;
+
 }
 .box_img1{
   float: left;
@@ -36,15 +35,15 @@ page{
   border-radius: 20rpx;
 }
 .name1{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .cuisine1{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .hunsu1{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .zuofa1{
@@ -58,10 +57,9 @@ page{
   margin-top:10%;
   height: 530rpx;
   width: 600rpx;
-  border-radius: 50rpx;
-  border: 7rpx dashed orange;
-  /* background-color: #4e95ef; */
-  /* overflow: scroll; */
+  border-radius: 10rpx;
+  border: 7rpx dashed #999;
+
 }
 .box_img2{
   margin: 5% 0 0 10%;
@@ -74,15 +72,15 @@ page{
   border-radius: 20rpx;
 }
 .name2{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .cuisine2{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .hunsu2{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .zuofa2{
@@ -94,14 +92,14 @@ page{
   
 }
 .zftxt{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .txt1{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }
 .txt2{
-  font-family: "黑体";
+  font-family: "方正兰亭超细黑简体";
   font-size: 35rpx;
 }

@@ -1,11 +1,12 @@
 page{
-  background:url('https://barenzoe.top/images/modaobg.png') no-repeat;
-  background-size: 100% 100%;
+  /* background:url('https://barenzoe.top/images/modaobg.png') no-repeat;
+  background-size: 100% 100%; */
+  background-color: rgb(240, 240, 240);
 }
 .caiming{
   font-size: 170%;
   /* font-weight: 900; */
-  color: red;
+  
   position: relative;
   top: 70rpx;
   left: 80rpx;
@@ -18,15 +19,22 @@ page{
   width: 50%;
 }
 .guishudi{
-  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 32rpx;
+  font-family: '方正兰亭超细黑简体';
+}
+.caixi{
+  font-size: 32rpx;
+  font-family: '方正兰亭超细黑简体';
 }
 .img_box{
   height: 200rpx;
   width: 200rpx;
-  /* background-color: blue; */
   position: absolute;
   top: 5%;
   left: 62%;
+  border-radius: 10rpx;
 }
 .img{
   height: 200rpx;
@@ -42,7 +50,8 @@ page{
 }
 .tip{
   color: green;
-  font-size: 90%;
+  /* font-size: 90%; */
+  font-size: 26rpx;
 }
 .culture{
   width: 80%;
@@ -52,8 +61,8 @@ page{
   overflow: scroll;
 }
 .content{
-  color: #fff;
+  
   font-size: 90%;
-  font-family: '黑体';
+  font-family: '方正兰亭超细黑简体';
 }
 

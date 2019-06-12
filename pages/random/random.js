@@ -5,39 +5,19 @@ Page({
    * 页面的初始数据t
    */
   data: {
-    showModal: false,
     food:[],
     suiji:1
   },
-  tuichu(e) {
-    this.setData({
-      showModal: false
-    });
-  },
-  toShowModal(e) {
+  go(e) {
     var that = this;
     var random = Math.floor(Math.random() * 327);
-    this.setData({
-      showModal: true
-    });
-    wx.request({
-      url: 'https://zn1121.com/suijipin',
-      method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
-      data:{
-        id:random
-      },
-      dataType: 'json',
-      success: function (res) {
-        that.setData({food:res.data});
-        console.log(res.data)
-      }
+    wx.navigateTo({
+      url: "../random_index/random?food_id=" + random
     })
     that.setData({
       suiji:random
     })
+    console.log("传到下一个页面的id",random)
   },
 
   hideModal() {

@@ -1,53 +1,12 @@
 page {
-  background: url('https://barenzoe.top/images/index_bg.jpg') no-repeat;
+  background: url('https://zn1121.com/images/helpbg.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .main {
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-}
-
-.img_box {
-  height: 550rpx;
-  width: 450rpx;
-  padding-top: 8%;
-  padding-left: 20%;
-}
-
-.img {
-  height: 550rpx;
-  width: 450rpx;
-  border-radius: 10rpx;
-}
-
-.search_icon {
-  height: 50rpx;
-  width: 50rpx;
-  padding-left: 10rpx;
-}
-
-.search_box {
-  background-color: #fff;
-  margin-top: 10%;
-  width: 500rpx;
-  margin-left: 17%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 70rpx;
-}
-
-.search_inp {
-  width: 400rpx;
-  padding-left: 20rpx;
-}
-
-.btn {
-  width: 300rpx;
-  background-color: #fbb901;
-  color: #fff;
-  margin-top: 14%;
 }
 
 .modal-mask {
@@ -131,19 +90,6 @@ page {
   padding: 0 0rpx 0 52rpx;
   font-family: "幼圆";
 }
-
-/* .txt_v{
-  width: 100%;
-  text-align:center;
-}
-.txt{
-  font-size: 90%;
-  color: #49beb7;
-  font-family: "楷体";
-  text-align:center;
-
-} */
-
 .taste-radio-txt {
   transform: scale(0.7);
 }
@@ -155,8 +101,11 @@ page {
   position: absolute;
 }
 
-.taste_txt {
-  font-size: 32rpx;
+.kouwei{
+  position: absolute;
+  top:35%;
+  left: 15%;
+  font-family: '方正兰亭超细黑简体';
 }
 
 .radio-group {
@@ -168,14 +117,61 @@ page {
 }
 
 .taste {
-  float: left;
+  margin-top: 8%;
+  margin-left: 25%;
+  font-family: '方正兰亭超细黑简体';
+}
+.caixi_txt{
+  margin-top: 10%;
+  margin-left: 15%;
+  font-family: '方正兰亭超细黑简体';
+}
+.caixi {
+  /* float: left; */
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 4%;
+  font-family: '方正兰亭超细黑简体';
+}
+.tip{
+  margin-top: 30%;
+  margin-left: 15%;
+  height: 300rpx;
   width: 70%;
-  margin-left: 20%;
-  margin-top: 23%;
+  display: flex;
+  flex-direction: column;
+}
+.row1{
+position: relative;
+top: -10%;
+font-family: '方正兰亭超细黑简体';
+/* font-size: 90%; */
+}
+.row2{
+font-family: '方正兰亭超细黑简体';
+/* font-size: 90%; */
 }
 
-.caixi {
-  float: left;
-  width: 60%;
-  margin-left: 20%;
+.btn {
+  position: absolute;
+  top: 75%;
+  left: 55%;
+  height: 100rpx;
+  width: 50%;
+  /* border: 2px solid gray; */
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  height: 90rpx;
+  width: 100rpx;
+}
+.btn_txt{
+  font-family: '方正兰亭超细黑简体';
+  font-size: 90%;
+  /* position: relative;
+  top: -30rpx; */
 }

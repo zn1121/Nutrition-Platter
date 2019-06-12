@@ -1,49 +1,13 @@
-<view class='main'>
-<!-- 图片 -->
-<view class='img_box'>
-<image class='img' src='../../images/random.jpg' mode='scaleToFill'></image>
-</view>
-
-
-
-<!-- 按钮 -->
-<view class='btn_box'>
-<button class='sub' bindtap='toShowModal'>点我随机拼</button>
-</view>
-<view class="modal-mask" bindtap="hideModal" wx:if="{{showModal}}"></view>
-<view wx:if="{{showModal}}">
-  <view class="modal-content">
-    <view class='teacher_name_modal'>
-    <text class='quit' bindtap='tuichu'>x</text>
-      <text class='role'>{{food[0].name}}</text>
-    </view>
-    <view class='modal_img'>
-      <image class='modalimg' src='{{food[0].url}}' style='width:250rpx;height:250rpx'></image>
-    </view>
+<view>
+  <text class='txt'>
+    作为一个吃货，
     
-    <view class='block_modal'>
-      <view class='block_title_modal'>荤素：</view>
-      <text class='block_title_modal_content'>{{food[0].hunsu}}</text>
-      <view class='block_title_modal'>口味：</view>
-      <text class='block_title_modal_content'>{{food[0].taste}}</text>
-      <view class='block_title_modal'>原料：</view>
-      <text class='block_title_modal_content'>{{food[0].yuanliao}}</text>
-      <view class='block_title_modal'>调料：</view>
-      <text class='block_title_modal_content'>{{food[0].tiaoliao}}</text>
-      <view class='block_title_modal'>做法：</view>
-      <text class='block_title_modal_contentdo'>{{food[0].do}}</text>
-    </view>
-    
+    你还在为吃什么而烦恼吗？
+  </text>
+
+  <view>
+    <button class='btn' bindtap='go'>
+      点一点
+    </button>
   </view>
-</view>
-
-<!-- 文字 -->
-<view class='txt_box'>
-<text class='txt'>
-随机不随便
-
-营养都在线
-</text>
-</view>
-
 </view>
