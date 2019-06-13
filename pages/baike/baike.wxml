@@ -20,7 +20,6 @@
   <text class='huan' bindtap='updateit'>换一批</text>
 
   <!-- 趣味百科 -->
-  <!-- <text class='title2'>趣味百科</text> -->
   <text class='zhidao'>你要知道</text>
 
   <!-- 推送消息 -->

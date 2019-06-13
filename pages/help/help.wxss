@@ -1,11 +1,10 @@
 page {
-  background: url('https://zn1121.com/images/helpbg.png') no-repeat;
+  background: url('https://zn1121.com/images/helpbg.jpg') no-repeat;
   background-size: 100% 100%;
 }
 
 .main {
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -90,9 +89,11 @@ page {
   padding: 0 0rpx 0 52rpx;
   font-family: "幼圆";
 }
+
 .taste-radio-txt {
   transform: scale(0.7);
 }
+
 .title_text {
   float: left;
   width: 15%;
@@ -101,9 +102,9 @@ page {
   position: absolute;
 }
 
-.kouwei{
+.kouwei {
   position: absolute;
-  top:35%;
+  top: 35%;
   left: 15%;
   font-family: '方正兰亭超细黑简体';
 }
@@ -121,19 +122,21 @@ page {
   margin-left: 25%;
   font-family: '方正兰亭超细黑简体';
 }
-.caixi_txt{
+
+.caixi_txt {
   margin-top: 10%;
   margin-left: 15%;
   font-family: '方正兰亭超细黑简体';
 }
+
 .caixi {
-  /* float: left; */
   width: 60%;
   margin-left: 25%;
   margin-top: 4%;
   font-family: '方正兰亭超细黑简体';
 }
-.tip{
+
+.tip {
   margin-top: 30%;
   margin-left: 15%;
   height: 300rpx;
@@ -141,15 +144,15 @@ page {
   display: flex;
   flex-direction: column;
 }
-.row1{
-position: relative;
-top: -10%;
-font-family: '方正兰亭超细黑简体';
-/* font-size: 90%; */
+
+.row1 {
+  position: relative;
+  top: -10%;
+  font-family: '方正兰亭超细黑简体';
 }
-.row2{
-font-family: '方正兰亭超细黑简体';
-/* font-size: 90%; */
+
+.row2 {
+  font-family: '方正兰亭超细黑简体';
 }
 
 .btn {
@@ -158,20 +161,19 @@ font-family: '方正兰亭超细黑简体';
   left: 55%;
   height: 100rpx;
   width: 50%;
-  /* border: 2px solid gray; */
   border-radius: 15rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.icon{
+
+.icon {
   height: 90rpx;
   width: 100rpx;
 }
-.btn_txt{
+
+.btn_txt {
   font-family: '方正兰亭超细黑简体';
   font-size: 90%;
-  /* position: relative;
-  top: -30rpx; */
 }

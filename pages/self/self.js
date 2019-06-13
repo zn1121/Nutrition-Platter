@@ -1,15 +1,10 @@
-// pages/self/self.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     arr1: [],
     foodurl: [],
     textareaVal: '',
   },
-  updateit(e) {//换一批
+  updateit(e) { //换一批
     var that = this;
     wx.request({
       url: 'https://zn1121.com/zizhupin_tuijian',
@@ -22,7 +17,7 @@ Page({
 
       },
       dataType: 'json',
-      success: function (res) {
+      success: function(res) {
         that.setData({
           arr1: res.data
         });
@@ -37,7 +32,7 @@ Page({
     wx.navigateTo({
       url: "../self_index/self_index?food_name=" + this.data.textareaVal
     })
-    console.log("跳转后的传值",this.data.textareaVal)
+    console.log("跳转后的传值", this.data.textareaVal)
   },
   onLoad: function() { //自主拼为你推荐获取数据
     var that = this;

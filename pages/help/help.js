@@ -4,14 +4,11 @@ Page({
     showModal: false,
     food: [],
     textareaVal: "",
-    // random1: "",
-    // random2: "",
     radio_taste: "",
     radio_caixi: "",
     item_taste: [{
       name: '酸辣味',
       value: '酸',
-      // checked: 'true'
     }, {
       name: '甜味',
       value: '甜'
@@ -25,7 +22,6 @@ Page({
     item_caixi: [{
       name: '鲁菜',
       value: '鲁',
-      // checked: 'true'
     }, {
       name: '浙菜',
       value: '浙'
@@ -51,19 +47,12 @@ Page({
   },
   toShowModal(e) {
     var that = this;
-    // this.data.random1 = Math.floor(Math.random() * 239); //荤菜
-    // this.data.random2 = Math.floor(Math.random() * 88); //素菜
 
     wx.navigateTo({
       url: '../help_index/help_index?radio_taste=' + this.data.radio_taste + "&radio_caixi=" + this.data.radio_caixi,
     })
   },
-  // hideModal() {
-  //   this.setData({
-  //     showModal: false
-  //   });
-  // },
-  textarea: function (e) {
+  textarea: function(e) {
     this.setData({
       textareaVal: e.detail.value
     })

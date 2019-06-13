@@ -1,10 +1,10 @@
 Page({
   data: {
     imgUrls: [
-      'https://zn1121.com/images/04.png',
-      'https://zn1121.com/images/05.png',
-      'https://zn1121.com/images/06.png'
-      
+      '../../images/06.jpg',
+      '../../images/05.jpg',
+      '../../images/04.jpg'
+
     ],
     indicatorDots: false,
     autoplay: true,
@@ -26,27 +26,27 @@ Page({
       url: '../help/help',
     })
   },
-  changeIndicatorDots: function (e) {
+  changeIndicatorDots: function(e) {
     this.setData({
       indicatorDots: !this.data.indicatorDots
     })
   },
-  changeAutoplay: function (e) {
+  changeAutoplay: function(e) {
     this.setData({
       autoplay: !this.data.autoplay
     })
   },
-  intervalChange: function (e) {
+  intervalChange: function(e) {
     this.setData({
       interval: e.detail.value
     })
   },
-  durationChange: function (e) {
+  durationChange: function(e) {
     this.setData({
       duration: e.detail.value
     })
   },
-  gobaike(){
+  gobaike() {
     wx.navigateTo({
       url: '../baike/baike',
     })
