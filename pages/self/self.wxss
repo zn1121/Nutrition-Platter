@@ -55,11 +55,13 @@ page {
 .menu {
   font-size: 28rpx;
   font-family: "方正兰亭超细黑简体";
+  /* text-shadow: 1rpx 1rpx 2px; */
+  text-decoration: underline;
 }
 
 .huan {
   float: right;
   padding-top: 20%;
-  font-size: 24rpx;
-  font-family: "方正兰亭超细黑简体";
+  font-size: 80%;
+  color: green;
 }

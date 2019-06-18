@@ -7,13 +7,15 @@ page {
   font-size: 28rpx;
   float: left;
   font-family: "方正兰亭超细黑简体";
-  margin: 200rpx 0 0 100rpx;
+  margin: 130rpx 0 0 100rpx;
 }
 
 .btn {
   float: left;
+  /* color: #fff; */
+  font-size: 80%;
   margin: 600rpx 0rpx 0 450rpx;
-  font-size: 28rpx;
   font-family: "方正兰亭超细黑简体";
-  background: rgb(240, 240, 240);
+  background: #fbfffb;
+  box-shadow: 1px 1px 1px;
 }

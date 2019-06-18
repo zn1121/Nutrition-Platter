@@ -8,8 +8,9 @@ Page({
     ],
     indicatorDots: false,
     autoplay: true,
-    interval: 2000,
-    duration: 1000
+    interval: 3000,
+    duration: 1500,
+    circular: true
   },
   goself() {
     wx.navigateTo({

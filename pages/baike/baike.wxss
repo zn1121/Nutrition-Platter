@@ -50,6 +50,7 @@ page {
   padding-right: 50rpx;
   padding-bottom: 30rpx;
   font-size: 90%;
+  text-decoration: underline;
 }
 
 .hr {

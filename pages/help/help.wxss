@@ -130,7 +130,7 @@ page {
 }
 
 .caixi {
-  width: 60%;
+  width: 64%;
   margin-left: 25%;
   margin-top: 4%;
   font-family: '方正兰亭超细黑简体';
@@ -156,9 +156,11 @@ page {
 }
 
 .btn {
-  position: absolute;
+  /* position: absolute;
   top: 75%;
-  left: 55%;
+  left: 55%; */
+  margin-left: 56%;
+  margin-top: 10%;
   height: 100rpx;
   width: 50%;
   border-radius: 15rpx;
@@ -169,8 +171,8 @@ page {
 }
 
 .icon {
-  height: 90rpx;
-  width: 100rpx;
+  height: 70rpx;
+  width: 80rpx;
 }
 
 .btn_txt {
